@@ -1,0 +1,11 @@
+def left_join(phrases):
+    test = []
+    a=""
+    for j in phrases:
+        test.append(j.replace("right","left"))
+    for i in range(0, len(test)):
+        if i == len(test)-1:
+            a = a + test[i]
+        else:
+            a = a + test[i]+","
+    return a
