@@ -1,0 +1,12 @@
+#sums even-indexes elements and multiply at the last
+def checkio(array):
+    sum = 0
+    index = 0
+    for i in array:
+        if index%2==0 and index < len(array):
+            sum = sum + i
+        index += 1
+    if len(array)==0:
+        return 0
+    else:
+        return sum*array[len(array)-1]
