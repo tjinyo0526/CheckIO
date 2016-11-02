@@ -1,0 +1,10 @@
+def checkio(words):
+    test = words.split()
+    a = False
+    if (len(test) >= 3):
+        for i in range(0, len(test)-2):
+            if(test[i].isalpha() and test[i+1].isalpha() and test[i+2].isalpha()):
+                a = True
+        return a
+    else:
+        return False
