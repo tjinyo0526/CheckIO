@@ -8,3 +8,7 @@ def checkio(arr):
             if data_abs[i] == abs(j):
                 data_abs[i] = j
     return data_abs
+
+#other solution
+#def checkio(arr):
+#    return sorted(arr, key=abs)
