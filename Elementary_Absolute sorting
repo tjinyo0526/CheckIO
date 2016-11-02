@@ -1,0 +1,10 @@
+def checkio(arr):
+    data_abs=[]
+    for i in arr:
+        data_abs.append(abs(i))
+    data_abs.sort()
+    for i in range(0, len(arr)):
+        for j in arr:
+            if data_abs[i] == abs(j):
+                data_abs[i] = j
+    return data_abs
