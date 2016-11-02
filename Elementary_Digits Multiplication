@@ -1,0 +1,10 @@
+def checkio(number):
+    strNum = str(number)
+    data=[]
+    answer=1
+    for i in range(0, len(strNum)):
+        if strNum[i] != '0':
+            data.append(int(strNum[i]))
+    for i in data:
+        answer = answer*i
+    return answer
